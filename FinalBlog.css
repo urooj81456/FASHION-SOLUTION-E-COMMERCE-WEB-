@@ -1,0 +1,379 @@
+/* --------------- B LOG PAGE CSS ------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+  background:#0b0b0b;
+  height:100vh; 
+}
+
+/* NAVBAR */
+.premium-navbar{
+  background:linear-gradient(135deg,#0b0b0b,#161616);
+  box-shadow:0 12px 30px rgba(0,0,0,.9);
+}
+
+/* BRAND */
+.brand-text{
+  font-size:20px;
+  font-weight:600;
+  letter-spacing:1px;
+  color:#c59d5f;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link{
+  color:#e0e0e0;
+  position:relative;
+  padding:6px 0;
+}
+.navbar-nav .nav-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:#c59d5f;
+  transition:.25s ease;
+}
+.navbar-nav .nav-link:hover::after{
+  width:100%;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #c59d5f;
+}
+
+.products, .blogs {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #c59d5f;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #c59d5f;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.blog-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-card {
+    width: 300px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    padding: 15px;
+    color: #c59d5f;
+}
+
+.blog-card p {
+  color: white !important;
+    padding: 0 15px 15px;
+    font-size: 14px;
+}
+
+.admin-panel {
+    display: none;
+    padding: 60px 8%;
+    background: #111;
+    text-align: center;
+}
+
+.admin-panel input,
+.admin-panel textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.slide {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slide h3 {
+    color: #c59d5f;
+    margin: 15px 0 10px;
+}
+
+.slide p {
+  color: white;
+    font-size: 14px;
+}
+
+body{
+    background:#0b0b0b;
+    font-family:Segoe UI;
+}
+
+.blog-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.section-title{
+    color:#c59d5f;
+    margin-bottom:50px;
+}
+
+/* Cards */
+
+/* container */
+.card-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* card */
+.blog-card{
+    position:relative;
+    width:280px;
+    height:380px;
+    overflow:hidden;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+/* image */
+.blog-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+/* hidden content */
+.card-content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+    background:linear-gradient(transparent, rgba(0,0,0,0.9));
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    
+    padding:20px;
+
+    opacity:0;
+    transform:translateY(50px);
+
+    transition:0.5s;
+}
+
+/* show on hover */
+.blog-card:hover .card-content{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* zoom image hover */
+.blog-card:hover img{
+    transform:scale(1.1);
+}
+
+/* text */
+.card-content h3{
+    color:#c59d5f;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#ddd;
+    font-size:14px;
+}
+
+
+/* ---------------- FOOTER FIXED CLEAN VERSION ---------------- */
+
+.lux-footer{
+  background:linear-gradient(160deg,#0b0b0b,#141414);
+  color:#d6d1c4;
+  margin-top:60px;
+  border-top:1px solid rgba(197,157,95,0.2);
+  width:100%;
+}
+
+/* TOP SECTION */
+.footer-top{
+  padding:70px 0 40px;
+}
+
+/* BRAND */
+.footer-brand{
+  color:#c59d5f;
+  letter-spacing:2px;
+  font-weight:700;
+}
+
+.footer-desc{
+  font-size:14px;
+  color:#bfb6a8;
+  margin:15px 0;
+}
+
+/* LINKS */
+.lux-footer h5{
+  color:#c59d5f;
+  margin-bottom:18px;
+}
+
+.lux-footer ul{
+  list-style:none;
+  padding:0;
+}
+
+.lux-footer ul li{
+  margin-bottom:10px;
+}
+
+.lux-footer ul li a{
+  color:#bfb6a8;
+  text-decoration:none;
+  transition:0.3s ease;
+}
+
+.lux-footer ul li a:hover{
+  color:#c59d5f;
+  padding-left:6px;
+}
+
+/* NEWSLETTER */
+.footer-newsletter{
+  display:flex;
+  margin-top:15px;
+}
+
+.footer-newsletter input{
+  flex:1;
+  background:#111;
+  border:1px solid #333;
+  padding:12px;
+  color:#fff;
+}
+
+.footer-newsletter button{
+  background:linear-gradient(135deg,#c59d5f,#a88244);
+  border:none;
+  padding:12px 22px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.footer-newsletter button:hover{
+  box-shadow:0 0 18px rgba(197,157,95,0.8);
+}
+
+/* TRUST */
+.footer-trust{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:20px 10%;
+  border-top:1px solid rgba(255,255,255,0.08);
+  flex-wrap:wrap;
+  color:#c59d5f;
+  font-size:14px;
+}
+
+/* PAYMENTS */
+.footer-payments{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  padding:20px;
+}
+
+/* BOTTOM */
+.footer-bottom{
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+  color:#888;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+  .footer-newsletter{
+    flex-direction:column;
+    gap:10px;
+  }
+}
+    /* Prevent horizontal overflow on mobile */
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
